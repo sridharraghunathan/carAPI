@@ -1,9 +1,13 @@
+using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using core.Dtos;
 using Infrastructure.CarModels;
 using Infrastructure.interfaces;
 using Infrastructure.ModelsWrapper;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers
 {
@@ -11,10 +15,49 @@ namespace API.Controllers
     {
 
        private readonly ICarRepository _carRepository;
-        public CarController(ICarRepository carRepository)
+        // private IWebHostEnvironment _hostingEnvironment; 
+        public CarController(ICarRepository carRepository
+      //  , IWebHostEnvironment hostingEnvironment
+        )
         {
             _carRepository = carRepository;
+            // _hostingEnvironment = hostingEnvironment;
         }
+
+        //Upload the file 
+        [HttpPost("upload") ]
+        public  IActionResult UploadFile()  
+        {  
+             
+       try
+            {
+                var file = Request.Form.Files[0];
+                var folderName = Path.Combine("wwwroot/images", "car");
+                var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+                if (file.Length > 0)
+                {
+                    var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                    var fullPath = Path.Combine(pathToSave, fileName);
+                    var dbPath = Path.Combine(folderName, fileName);
+                    using (var stream = new FileStream(fullPath, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                    }
+                    return Ok(new { dbPath });
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex}");
+            }
+            
+        }  
+  
+    
 
         // Task<List<Car>> GetCarDataAsync();
           [HttpGet("carinfo")]
