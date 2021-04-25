@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Sridhar - Learning E\\Learning - ALL\\Angular\\CarAPI\\core\\core.csproj": {}
+  },
+  "projects": {
+    "D:\\Sridhar - Learning E\\Learning - ALL\\Angular\\CarAPI\\core\\core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Sridhar - Learning E\\Learning - ALL\\Angular\\CarAPI\\core\\core.csproj",
+        "projectName": "core",
+        "projectPath": "D:\\Sridhar - Learning E\\Learning - ALL\\Angular\\CarAPI\\core\\core.csproj",
+        "packagesPath": "C:\\Users\\mitsr\\.nuget\\packages\\",
+        "outputPath": "D:\\Sridhar - Learning E\\Learning - ALL\\Angular\\CarAPI\\core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mitsr\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

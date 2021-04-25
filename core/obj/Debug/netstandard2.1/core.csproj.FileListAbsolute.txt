@@ -1,0 +1,9 @@
+D:\Sridhar - Learning E\Learning - ALL\Angular\CarAPI\core\bin\Debug\netstandard2.1\core.deps.json
+D:\Sridhar - Learning E\Learning - ALL\Angular\CarAPI\core\bin\Debug\netstandard2.1\core.dll
+D:\Sridhar - Learning E\Learning - ALL\Angular\CarAPI\core\bin\Debug\netstandard2.1\core.pdb
+D:\Sridhar - Learning E\Learning - ALL\Angular\CarAPI\core\obj\Debug\netstandard2.1\core.csprojAssemblyReference.cache
+D:\Sridhar - Learning E\Learning - ALL\Angular\CarAPI\core\obj\Debug\netstandard2.1\core.AssemblyInfoInputs.cache
+D:\Sridhar - Learning E\Learning - ALL\Angular\CarAPI\core\obj\Debug\netstandard2.1\core.AssemblyInfo.cs
+D:\Sridhar - Learning E\Learning - ALL\Angular\CarAPI\core\obj\Debug\netstandard2.1\core.csproj.CoreCompileInputs.cache
+D:\Sridhar - Learning E\Learning - ALL\Angular\CarAPI\core\obj\Debug\netstandard2.1\core.dll
+D:\Sridhar - Learning E\Learning - ALL\Angular\CarAPI\core\obj\Debug\netstandard2.1\core.pdb
